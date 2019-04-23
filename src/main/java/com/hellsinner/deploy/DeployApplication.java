@@ -18,6 +18,11 @@ public class DeployApplication {
     public String second(){
         return "second";
     }
+
+    @GetMapping("/third")
+    public String third(){
+        return "third";
+    }
     public static void main(String[] args) {
         SpringApplication.run(DeployApplication.class, args);
     }
