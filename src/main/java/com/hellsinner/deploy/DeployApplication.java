@@ -9,9 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DeployApplication {
 
-    @GetMapping("/index")
+    @GetMapping("/first")
     public String index(){
         return "first";
+    }
+
+    @GetMapping("/second")
+    public String second(){
+        return "second";
     }
     public static void main(String[] args) {
         SpringApplication.run(DeployApplication.class, args);
