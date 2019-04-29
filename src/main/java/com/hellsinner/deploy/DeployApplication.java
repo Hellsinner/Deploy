@@ -23,6 +23,11 @@ public class DeployApplication {
     public String third(){
         return "third";
     }
+
+    @GetMapping("/fourth")
+    public String fourth(){
+        return "fourth";
+    }
     public static void main(String[] args) {
         SpringApplication.run(DeployApplication.class, args);
     }
