@@ -28,6 +28,11 @@ public class DeployApplication {
     public String fourth(){
         return "fourth";
     }
+
+    @GetMapping("/fiveth")
+    public String fiveth(){
+        return "fiveth";
+    }
     public static void main(String[] args) {
         SpringApplication.run(DeployApplication.class, args);
     }
